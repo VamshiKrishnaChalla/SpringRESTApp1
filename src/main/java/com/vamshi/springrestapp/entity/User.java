@@ -20,6 +20,6 @@ public class User {
     private String firstName;
     @Column(name="Last_Name", nullable=false)
     private String lastName;
-    @Column(name="eMail",unique=true,nullable=false )
+    @Column(name="eMail",nullable=false )
     private String email;
 }
