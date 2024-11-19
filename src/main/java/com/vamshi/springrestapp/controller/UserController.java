@@ -70,7 +70,8 @@ public class UserController {
     public ResponseEntity<ErrorDetails> handleUserNotFoundException(
             UserNotFoundException exception,
             WebRequest webRequest
-    ){
+    )
+    {
         ErrorDetails errorDetails = new ErrorDetails(
                 LocalDateTime.now(),
                 exception.getMessage(),
